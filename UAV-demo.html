@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UAV-demo</title>
+    <style>
+        a {
+          text-decoration: none;
+          color: #ccc;
+        }
+        #root {
+          width: 500px;
+          border: 2px solid #ccc;
+          margin: 100px auto;
+          padding:50px;
+          border-radius: 5px;
+        }
+        .UAV-content {
+          width: 400px;
+          height: 100px;
+          resize: none;
+        }
+        #UAV-result {
+          height: 10px;
+          color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="root">
+    <div>
+        <div>
+            <span>方式一：</span>
+            <a href="javascript:;" id="showFile" >选择文件</a>
+            <input type="file" class="UAV-file" style="display: none">
+        </div>
+        <div>
+            <span>方式二：</span>
+            <a href="javascript:;" id="showContent">手动输入内容</a>
+            <textarea class="UAV-content" style="display: none"></textarea>
+      </div>
+    </div>
+
+    <div>
+        <span>请输入消息序号：</span>
+        <input type="number" class="UAV-id">
+    </div>
+    <button id="search">查询</button>
+    <div id="UAV-result"></div>
+</div>
+<script src="UAV-demo.js"></script>
+</body>
+</html>
